@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="886.0" prefWidth="1656.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.UserGUIController">
+   <children>
+      <GridPane layoutX="134.0" layoutY="220.0" prefHeight="536.0" prefWidth="1497.0" style="-fx-background-color: #F5F9F7;">
+         <children>
+            <Button fx:id="login" focusTraversable="false" graphicTextGap="1.0" mnemonicParsing="false" onAction="#loginButtonPushed" prefHeight="46.0" prefWidth="310.0" style="-fx-background-color: #008A00;" text="🔒 Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <CheckBox focusTraversable="false" mnemonicParsing="false" text="Remember me" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="18.0" />
+               </font>
+            </CheckBox>
+            <PasswordField fx:id="passwordField" onAction="#loginButtonPushed" prefHeight="53.0" prefWidth="497.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="userField" prefHeight="48.0" prefWidth="498.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="43.0" prefWidth="522.0" text="Username" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="441.0" text="Password" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="outputText" alignment="TOP_LEFT" prefHeight="129.0" prefWidth="573.0" textFill="RED" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Nirmala UI Semilight" size="18.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <RadioButton fx:id="customerButton" focusTraversable="false" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" selected="true" text="customer">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="role" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="managerButton" focusTraversable="false" layoutX="137.0" layoutY="18.0" mnemonicParsing="false" text="manager" toggleGroup="$role" />
+               </children>
+            </Pane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="126.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="730.0" minWidth="10.0" prefWidth="501.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="730.0" minWidth="10.0" prefWidth="195.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="730.0" minWidth="10.0" prefWidth="610.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="730.0" minWidth="10.0" prefWidth="84.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="55.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="198.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="230.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="135.0" layoutY="130.0" prefHeight="81.0" prefWidth="439.0" text="EasyWeb Login" textFill="#12412a">
+         <font>
+            <Font name="Nirmala UI Semilight" size="36.0" />
+         </font></Label>
+      <ImageView id="TD Canada Trust - EasyWeb Login" fitHeight="124.0" fitWidth="1664.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TD%20Header.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
